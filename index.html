@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SPICEUP COFFEE - 千葉県佐倉市ユーカリが丘のスパイスカレーとスペシャルティコーヒーのお店。香り高いスパイスカレーと毎月変わる特別な一杯をお届けします。">
+  <title>SPICEUP COFFEE | スパイスカレーとスペシャルティコーヒー</title>
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+JP:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header id="site-header">
+    <div class="container-xxl">
+      <nav class="header-nav">
+        <a href="#hero" class="header-logo">
+          <img src="ロゴ/スクリーンショット 2026-03-30 122942.png" alt="SPICEUP COFFEE ロゴ">
+        </a>
+        <ul class="nav-list">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#menu">MENU</a></li>
+          <li><a href="#news">NEWS</a></li>
+          <li><a href="#access">ACCESS</a></li>
+          <li><a href="#contact" class="nav-cta">CONTACT</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SP Drawer Overlay -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- SP Drawer Menu -->
+  <nav class="drawer" id="drawer" aria-hidden="true">
+    <button class="drawer-close" id="drawerClose" aria-label="メニューを閉じる">
+      <i class="fas fa-times"></i>
+    </button>
+    <ul class="drawer-list">
+      <li><a href="#about" class="drawer-link">ABOUT</a></li>
+      <li><a href="#menu" class="drawer-link">MENU</a></li>
+      <li><a href="#news" class="drawer-link">NEWS</a></li>
+      <li><a href="#access" class="drawer-link">ACCESS</a></li>
+      <li><a href="#contact" class="drawer-link">CONTACT</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="https://www.instagram.com/spiceupcoffee/" target="_blank" rel="noopener noreferrer" class="drawer-instagram">
+        <i class="fab fa-instagram"></i>
+        @spiceupcoffee
+      </a>
+      <p class="drawer-hours">火〜日 11:00〜16:00 ／ 月定休</p>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO SLIDER
+  ============================================================ -->
+  <section id="hero">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1: コーヒー -->
+        <div class="swiper-slide">
+          <div class="hero-slide" style="background-image: url('料理/コーヒー%20(1).jpg')">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <p class="hero-eyebrow">SPICEUP COFFEE</p>
+              <h1 class="hero-title">
+                毎月変わる、<br>特別な一杯。
+              </h1>
+              <p class="hero-desc">
+                浅煎り豆の個性を引き出した<br>至高のスペシャルティコーヒー
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: カレーセット -->
+        <div class="swiper-slide">
+          <div class="hero-slide" style="background-image: url('料理/カレーセット%20(1).jpg')">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <p class="hero-eyebrow">SPICEUP COFFEE</p>
+              <h1 class="hero-title">
+                香り高い<br>スパイスカレー
+              </h1>
+              <p class="hero-desc">
+                心も体も満たす、<br>本格スパイスの世界へ
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: ビリヤニ -->
+        <div class="swiper-slide">
+          <div class="hero-slide" style="background-image: url('料理/ビリヤニセット%20(1).jpg')">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <p class="hero-eyebrow">SPICEUP COFFEE</p>
+              <h1 class="hero-title">
+                あなたの日常を、<br>鮮やかに彩る。
+              </h1>
+              <p class="hero-desc">
+                ユーカリが丘にたたずむ、<br>スパイスと珈琲の小さなお店
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.swiper-wrapper -->
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <a href="#about" class="hero-scroll" aria-label="下へスクロール">
+      <span class="hero-scroll-bar"></span>
+    </a>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section id="about" class="section-about">
+    <div class="container-xxl">
+      <div class="row align-items-center g-lg-5 g-4">
+
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+          <div class="about-image-wrap">
+            <img src="料理/コーヒー%20(1).jpg" alt="SPICEUP COFFEEのスペシャルティコーヒー" class="about-image">
+            <div class="about-image-deco"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+          <div class="about-content">
+            <p class="section-label">ABOUT</p>
+            <h2 class="section-title">スパイスと珈琲が<br>交わる場所</h2>
+
+            <blockquote class="about-lead">
+              香り高いスパイスカレーと、毎月変わる特別な一杯。
+              浅煎り豆の個性を引き出した至高のスペシャルティコーヒーで、
+              あなたの日常を鮮やかに彩ります。
+            </blockquote>
+
+            <div class="about-features">
+
+              <div class="feature-item">
+                <div class="feature-icon">☕</div>
+                <div class="feature-body">
+                  <strong>スペシャルティコーヒー</strong>
+                  <p>酸味強め・渋み中庸・苦味控えめ。浅煎り豆の個性を最大限に引き出したブラックアイスコーヒーなど、毎月変わる特別な一杯をご提供しています。</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">🌶</div>
+                <div class="feature-body">
+                  <strong>本格スパイスカレー</strong>
+                  <p>香り高いスパイスをふんだんに使った本格カレー。ビリヤニセットなど、こだわりのメニューをご用意しています。</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">🙋</div>
+                <div class="feature-body">
+                  <strong>ワンオペの温かいお店</strong>
+                  <p>若いオーナーが一人で丁寧に切り盛りする、アットホームなカフェです。</p>
+                </div>
+              </div>
+
+            </div><!-- /.about-features -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       MENU HIGHLIGHT
+  ============================================================ -->
+  <section id="menu" class="section-menu">
+    <div class="container-xxl">
+
+      <div class="section-header text-center" data-aos="fade-up">
+        <p class="section-label">MENU</p>
+        <h2 class="section-title">こだわりの二本柱</h2>
+        <p class="section-sub">スパイスとコーヒー、二つの個性が重なる場所</p>
+      </div>
+
+      <div class="row g-4 mt-2">
+
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img src="料理/カレーセット%20(1).jpg" alt="スパイスカレーセット">
+              <span class="menu-badge">FOOD</span>
+            </div>
+            <div class="menu-card-body">
+              <p class="menu-card-en">Spice Curry</p>
+              <h3 class="menu-card-title">スパイスカレー</h3>
+              <p class="menu-card-desc">
+                丁寧に調合されたスパイスが薫る、本格インド料理。ビリヤニセットなど、旬の食材と個性豊かなスパイスが融合した一皿です。
+              </p>
+              <div class="menu-card-info">
+                <i class="far fa-clock"></i> 火〜日 11:00〜16:00
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img src="料理/コーヒー%20(1).jpg" alt="スペシャルティコーヒー">
+              <span class="menu-badge">DRINK</span>
+            </div>
+            <div class="menu-card-body">
+              <p class="menu-card-en">Specialty Coffee</p>
+              <h3 class="menu-card-title">スペシャルティコーヒー</h3>
+              <p class="menu-card-desc">
+                毎月厳選した浅煎り豆を使用。酸味強め・渋み中庸・苦味控えめのブラックアイスコーヒーなど、個性豊かな一杯をどうぞ。
+              </p>
+              <div class="menu-card-info">
+                <i class="far fa-clock"></i> 全営業日
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       NEWS
+  ============================================================ -->
+  <section id="news" class="section-news">
+    <div class="container-xxl">
+
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-label">NEWS</p>
+        <h2 class="section-title">お知らせ</h2>
+      </div>
+
+      <div class="news-list" data-aos="fade-up" data-aos-delay="100">
+
+        <article class="news-item">
+          <time class="news-date" datetime="2026-04-17">2026.04.17</time>
+          <span class="news-cat">お知らせ</span>
+          <a href="#" class="news-title">ホームページをオープンしました</a>
+        </article>
+
+        <article class="news-item">
+          <time class="news-date" datetime="2026-04-01">2026.04.01</time>
+          <span class="news-cat">メニュー</span>
+          <a href="#" class="news-title">4月の月替わりスペシャルティコーヒーが始まりました</a>
+        </article>
+
+        <article class="news-item">
+          <time class="news-date" datetime="2026-03-15">2026.03.15</time>
+          <span class="news-cat">営業情報</span>
+          <a href="#" class="news-title">春の営業時間についてのご案内</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ACCESS
+  ============================================================ -->
+  <section id="access" class="section-access">
+    <div class="container-xxl">
+
+      <div class="section-header text-center" data-aos="fade-up">
+        <p class="section-label">ACCESS</p>
+        <h2 class="section-title">店舗情報</h2>
+      </div>
+
+      <div class="row g-5 mt-1">
+
+        <!-- Info Column -->
+        <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800">
+          <div class="access-info">
+
+            <div class="access-block">
+              <h3 class="access-block-title">
+                <i class="far fa-clock"></i> 営業時間
+              </h3>
+              <table class="hours-table">
+                <tbody>
+                  <tr>
+                    <th>火・水・木・日</th>
+                    <td>11:00 〜 16:00</td>
+                  </tr>
+                  <tr class="row-evening">
+                    <th>金・土</th>
+                    <td>
+                      11:00 〜 16:00
+                      <br>
+                      <span class="badge-evening">夜営業</span> 18:00 〜 21:00
+                    </td>
+                  </tr>
+                  <tr class="row-closed">
+                    <th>月曜日</th>
+                    <td><span class="badge-closed">定休日</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="access-block">
+              <h3 class="access-block-title">
+                <i class="fas fa-map-marker-alt"></i> 住所・アクセス
+              </h3>
+              <ul class="access-list">
+                <li>
+                  <i class="fas fa-store"></i>
+                  <span>千葉県佐倉市ユーカリが丘4丁目3 ジョイナード2F</span>
+                </li>
+                <li>
+                  <i class="fas fa-train"></i>
+                  <span>京成本線 ユーカリが丘駅より徒歩10分</span>
+                </li>
+                <li>
+                  <i class="fas fa-walking"></i>
+                  <span>地区センター駅より56m</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="access-block">
+              <h3 class="access-block-title">
+                <i class="fas fa-parking"></i> 駐車場
+              </h3>
+              <p class="access-parking">
+                提携駐車場：<strong>ワイパーク スカイプラザ・モール（立体駐車場）</strong><br>
+                サービス券あり（3時間無料）<br>
+                3Fエレベーター経由でご来店ください
+              </p>
+            </div>
+
+            <div class="access-block">
+              <h3 class="access-block-title">
+                <i class="fas fa-phone"></i> お電話
+              </h3>
+              <a href="tel:07093121036" class="access-tel">070-9312-1036</a>
+              <p class="access-note">※ワンオペ営業のため、出られない場合がございます</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Map Column -->
+        <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+          <div class="map-wrap">
+            <iframe
+              src="https://maps.google.com/maps?q=千葉県佐倉市ユーカリが丘4丁目3+ジョイナード&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="480"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="SPICEUP COFFEE アクセスマップ">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT / RESERVATION
+  ============================================================ -->
+  <section id="contact" class="section-contact">
+    <div class="container-xxl">
+
+      <!-- Instagram Reservation Banner -->
+      <div class="reservation-wrap" data-aos="fade-up">
+        <div class="reservation-banner">
+          <div class="reservation-icon">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="reservation-text">
+            <h3>ご予約はInstagramのDMから</h3>
+            <p>ご予約は公式Instagramアカウントへのダイレクトメッセージにてお受けしております。お気軽にご連絡ください。</p>
+          </div>
+          <a href="https://www.instagram.com/spiceupcoffee/" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+            <i class="fab fa-instagram"></i>
+            @spiceupcoffee を開く
+          </a>
+        </div>
+      </div>
+
+      <!-- 重要：連絡に関する注意事項 -->
+      <div class="notice-box" data-aos="fade-up" data-aos-delay="80">
+        <div class="notice-icon">
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+        <div class="notice-content">
+          <p class="notice-title">連絡に関する大切なお知らせ</p>
+          <p class="notice-text">
+            当店の連絡先（DM・電話・メール）は、ご予約や営業に関するお問い合わせなど「店舗のご利用に関する内容」のみ対応しております。店主個人へのご連絡や、店舗運営と関係のない内容につきましては、DM・電話・メールいずれの場合でも一切対応しておりません。また当店はワンオペ営業のため、対応までお時間をいただく場合がございます。ご理解のほどよろしくお願いいたします。
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap" data-aos="fade-up" data-aos-delay="160">
+        <div class="section-header text-center">
+          <p class="section-label">CONTACT</p>
+          <h2 class="section-title">お問い合わせ</h2>
+          <p class="contact-intro">店舗のご利用に関するお問い合わせのみ承っております。</p>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+
+          <div class="form-group">
+            <label for="name" class="form-label">
+              お名前 <span class="required-badge">必須</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="山田 太郎"
+              autocomplete="name"
+              required>
+            <p class="field-error" id="nameError">お名前を入力してください</p>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">
+              メールアドレス <span class="required-badge">必須</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="example@email.com"
+              autocomplete="email"
+              required>
+            <p class="field-error" id="emailError">正しいメールアドレスを入力してください</p>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">
+              お問い合わせ内容 <span class="required-badge">必須</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-control"
+              rows="7"
+              placeholder="お問い合わせ内容をご記入ください"
+              required></textarea>
+            <p class="field-error" id="messageError">お問い合わせ内容を入力してください</p>
+          </div>
+
+          <div class="form-submit-wrap">
+            <button type="submit" class="btn-submit">
+              送信する <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+        </form>
+
+        <!-- Success Message -->
+        <div id="formSuccess" class="form-success" hidden>
+          <i class="fas fa-check-circle"></i>
+          <p>お問い合わせを受け付けました。<br>ありがとうございます。</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer">
+    <div class="container-xxl">
+
+      <div class="footer-inner">
+
+        <div class="footer-logo-col">
+          <a href="#hero" class="footer-logo">
+            <img src="ロゴ/スクリーンショット 2026-03-30 122942.png" alt="SPICEUP COFFEE">
+          </a>
+          <p class="footer-tagline">スパイスと珈琲が交わる場所</p>
+          <div class="footer-sns">
+            <a href="https://www.instagram.com/spiceupcoffee/" target="_blank" rel="noopener noreferrer" class="footer-sns-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-info-col">
+          <h4 class="footer-col-title">SHOP INFO</h4>
+          <ul class="footer-info-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              千葉県佐倉市ユーカリが丘4丁目3 ジョイナード2F
+            </li>
+            <li>
+              <i class="far fa-clock"></i>
+              火・水・木・日 11:00〜16:00<br>
+              &emsp;&emsp;&emsp;金・土 11:00〜16:00 / 18:00〜21:00
+            </li>
+            <li>
+              <i class="fas fa-calendar-times"></i>
+              月曜定休
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:07093121036">070-9312-1036</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">MENU</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#access">ACCESS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /.footer-inner -->
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SPICEUP COFFEE. All Rights Reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
