@@ -163,13 +163,6 @@ button {
   width: auto;
   object-fit: contain;
   transition: var(--transition);
-  /* ヒーロー上（透明ヘッダー）：ロゴを白く反転して見えるようにする */
-  filter: brightness(0) invert(1);
-}
-
-/* スクロール後（明るい背景）：ロゴを元の黒に戻す */
-#site-header.is-scrolled .header-logo img {
-  filter: none;
 }
 
 /* Nav List (PC) */
